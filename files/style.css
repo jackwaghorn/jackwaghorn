@@ -18,7 +18,7 @@ position:relative;
 }
 
 
-#mute:hover, #mute1:hover, #mute2:hover, #mute2:hover, #mute3:hover, #mute4:hover, #mute5:hover, #mute6:hover, #mute7:hover, #mute8:hover, #mute9:hover {
+#mute:hover, #mute1:hover, #mute2:hover, #mute2:hover, #mute3:hover, #mute4:hover, #mute5:hover, #mute6:hover, #mute7:hover, #mute8:hover, #mute9:hover #mute10:hover {
        cursor: pointer; 
 }
 
