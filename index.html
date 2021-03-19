@@ -45,7 +45,7 @@
   <a target="_blank" href="https://roxanakenjeeva.com/" target="_top">roxanakenjeeva.com</a>
   <div class="line"></div></div>
   <div class="big">
-  <video class="b-lazy" playsinline autoplay muted loop poster="./filesimages/easypeelers/easy.jpg">
+  <video id="mute10" class="b-lazy" playsinline autoplay muted loop poster="./filesimages/easypeelers/easy.jpg">
               <source data-src="./filesimages/easypeelers/easypeelers.mp4" type="video/mp4">
           </video>
   </div>
@@ -599,7 +599,6 @@ $(document).ready(function(e) {
         isMuted = !isMuted;
         $('#mute').prop("muted", isMuted);
     });
-    
 });
 
 
@@ -724,6 +723,20 @@ $(document).ready(function(e) {
         $('#mute9').prop("muted", isMuted);
     });
 });
+
+
+$(document).ready(function(e) {
+    
+    $('#mute10').on('loadeddata', function(e) {
+        console.log('onloadeddata', e.target);
+        $(this).prop("muted", true);
+     });
+    var isMuted = true; 
+     $('#mute10').click(function(e) {
+         isMuted = !isMuted;
+         $('#mute10').prop("muted", isMuted);
+     });
+ });
 
 
 
