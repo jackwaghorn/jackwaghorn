@@ -1,0 +1,115 @@
+body {
+  background-color: #ccc1ac;
+  max-height: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  font-size: 1em;
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  margin-left: 6vw;
+  margin-bottom: 4em;
+  cursor: pointer;
+}
+li:hover {
+  color: grey;
+}
+
+.dot {
+  height: 1em;
+  width: 1em;
+  margin-right: 1em;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.yellow {
+  background-color: #ded85b;
+}
+.blue {
+  background-color: #9dcbeb;
+}
+.pink {
+  background-color: #ea9de9;
+}
+.grey {
+  background-color: grey;
+}
+.green {
+  background-color: #88e798;
+}
+.red {
+  background-color: #e85a5a;
+}
+
+.diagram {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  margin: 1em;
+}
+
+.model {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 40%;
+  height: auto;
+  right: 0;
+  padding-right: 2em;
+  margin: auto;
+}
+
+img {
+  width: 100%; /* or any custom size */
+  height: 100%;
+  object-fit: contain;
+}
+
+#moodboard {
+  height: 90%;
+  width: 90%;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+  cursor: pointer;
+
+}
+.container {
+  padding: 1em;
+  position: absolute;
+ left:0;
+ right:0;
+  top: 0;
+  bottom: 0;
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+  justify-content: center;
+  align-items: center;
+}
+
+
+footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 2em;
+  margin-right: auto;
+  margin-left: auto;
+  width: 95%;
+  border-top: 1px solid black;
+}
