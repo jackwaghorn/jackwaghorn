@@ -6,30 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOT | Interactive moodboard</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+  
+  <!-- Moodboard overlay -->
 
-    <div id="moodboard">
-        <div class="container"><img src="img/moodboard.jpg" style="width:80%"alt=""></div>
+  <div class="loader"><img src="img/logo.png" alt=""></div>
+
+  <div id="pageOverlay"></div>
+
+
+
+    <div id="blur" >
+
+        <h3>Concept model</h3>
+
+<!-- 3d Model diagram -->
+<div class="wrap">
+<div class="container">
+    <div class="overlay">
+        <div id="red" class="dot red red_position dot_resize"></div>
+        <div id="green" class="dot green green_position dot_resize"></div>
+        <div id="teal" class="dot teal teal_position dot_resize"></div>
+        <div id="yellow" class="dot yellow yellow_position dot_resize"></div>
+        <div id="orange" class="dot orange orange_position dot_resize"></div>
+        <div id="blue" class="dot blue blue_position dot_resize"></div>
+        <div id="pink" class="dot pink pink_position dot_resize"></div>
+        <div id="grey" class="dot grey grey_position dot_resize"></div>
+        
+        
+        
+
     </div>
-
-    <div class="diagram"><img class="diagram"src="img/diagram.png" alt=""></div>
-
-    <img class="model" src="img/3d_model.png" alt="">
-
+    <img  src="img/diagram.jpg" alt="">
     
-
-    <ul>
-        <li id="yellow"><div class="dot yellow"></div>digital</li>
-        <li id="blue"><div class="dot blue "></div>pop up</span></li>
-        <li id="pink"><div class="dot pink"></div>customer engagement</li>
-        <li id="grey"><div class="dot grey"></div>service area</li>
-        <li id="green"><div class="dot green"></div>back of house</li>
-        <li id="red"><div class="dot red"></div>fitting rooms</li>
-    </ul>
+</div>
+</div>
+   
+<!-- List key -->
+<ul id="list-key">
+    KEY
+</ul>
 
 <footer></footer>
-    
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="jq-blureffect.js"></script>
+
     <script src="app.js"></script>
+
+
+
+    
 </body>
 </html>

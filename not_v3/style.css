@@ -1,5 +1,5 @@
 body {
-  background-color: #241c19;
+  background-color: black;
   max-height: 100%;
   max-width: 100%;
   padding: 0;
@@ -8,23 +8,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-
-
-
-
-
 ul {
-  font-size: 0.8em;
+  font-size: 1em;
   list-style: none;
   position: absolute;
   bottom: 0;
   padding: 0;
-  margin:4vw;
+  margin-left: 6vw;
+  margin-bottom: 4em;
   cursor: pointer;
-  text-transform: uppercase;
-  line-height: 2;
 }
 li:hover {
   color: grey;
@@ -41,30 +33,26 @@ li:hover {
 }
 
 .yellow {
-  background-color: #dedd60;
+  background-color: #ded85b;
 }
 .blue {
-  background-color: #4c8cc7;
+  background-color: #9dcbeb;
 }
 .pink {
-  background-color: #d273c7;
+  background-color: #ea9de9;
 }
 .grey {
-  background-color: #b7bcc2;
-}
-
-.teal {
-  background-color: #a09eb6;
+  background-color: grey;
 }
 .green {
-  background-color: #70d1ab;
+  background-color: #88e798;
 }
 .red {
-  background-color: #b7311d;
+  background-color: red;
 }
 
 .orange {
-  background-color:#dd7c51;
+  background-color: orange;
 }
 
 .yellow_position {
@@ -104,12 +92,6 @@ li:hover {
   left: 43%;
 }
 
-.teal_position {
-  position: absolute;
-  top: 65%;
-  left: 53%;
-}
-
 .dot_resize {
   width:4%;
   height:auto;
@@ -145,41 +127,18 @@ li:hover {
   cursor: pointer;
   top: 0;
   bottom: 0;
-
+  transition: all 0.3s linear;
   display: none;
 }
-.loader {
-  top:0;
-  bottom:0;
-  position: fixed;
-  left:0;
-  right:0;
-  width:100%;
-  height:100%;
-  background-color:#ccc1ac;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 
 .container {
-  position: absolute;
-width: 50%;
-margin:auto;
-left:0;
-right:0;
-  
-
+  position: relative;
+  width: 46%;
+  margin: 2%;
+  float: right;
 }
-.wrap {
-  position: absolute;
-  height: 100%;
-  width:100%;
-  display: flex; justify-content: center; align-items: center;
-}
-
 
 img {
   display: block;
@@ -197,53 +156,46 @@ img {
   color: white;
 }
 
-h3 {
-  text-transform: uppercase;
-  margin:4vw;
-  position: absolute;
-}
-
 .area {
-  margin:3em;
+ margin:4em;
 
 }
 
 .moodboard {
   margin:inherit;
-  width:50%;
+  width:40%;
   float:right;
   top:0;
   right:0;
   position: absolute;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 
 .wireframe {
-  margin:2em;
   margin:inherit;
   left:0;
-  width:35%;
+  width:40%;
   float:left;
   bottom:0;
   position: absolute;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 .wireframe:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .wireframe:hover ~ .moodboard {
-  transform: scale(0.95);
+  transform: scale(0.8);
 }
 
-.moodboard:hover ~ .wireframe {
-  transform: scale(0.95);
+.moodboard:hover ~ .wireframe{
+  transform: scale(0.8);
 }
 
 .moodboard:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 
@@ -253,7 +205,6 @@ h3 {
 
 
 .instagram {
-  margin:2em;
   padding:inherit;
   width:30%;
   float:right;
@@ -262,17 +213,6 @@ h3 {
   position: absolute;
 }
 
-.instagram2 {
-  margin:2em;
-  padding:inherit;
-  width:30%;
-  float:left;
-  top:0;
-  left:0;
-  position: absolute;
-}
-
-
 
 
 
@@ -280,57 +220,30 @@ footer {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: 1em;
+  bottom: 2em;
   margin-right: auto;
   margin-left: auto;
-  width: 92%;
-  border-top: 1px solid white;
+  width: 95%;
+  border-top: 1px solid black;
 }
 
 /* Drop shadow */
 .z-depth-2 {
-  -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.3);
 }
 
 .blur {
-  opacity: 1;
-  visibility: visible;
-  filter: blur(3px);
-  z-index: 0;
+  filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -webkit-filter: blur(4px);
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-}
-.blur-in {
-  visibility: visible;
-  filter: blur(0px);
-  opacity: 1;
-  transition: all 0.25s ease-out;
-  z-index: 0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.blur-out {
-  visibility: visible;
-  filter: blur(3px);
-  opacity: 1;
-  transition: all 0.25s ease-out;
-  z-index: 0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.layoutplans {
-  margin:auto;
-  width:60%;
 }

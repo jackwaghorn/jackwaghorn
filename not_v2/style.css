@@ -1,0 +1,134 @@
+body {
+  background-color: #ccc1ac;
+  max-height: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  font-size: 1em;
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  margin-left: 6vw;
+  margin-bottom: 4em;
+  cursor: pointer;
+}
+li:hover {
+  color: grey;
+}
+
+.dot {
+  height: 1em;
+  width: 1em;
+  margin-right: 1em;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.yellow {
+  background-color: #ded85b;
+}
+.blue {
+  background-color: #9dcbeb;
+}
+.pink {
+  background-color: #ea9de9;
+}
+.grey {
+  background-color: grey;
+}
+.green {
+  background-color: #88e798;
+}
+.red {
+  background-color: #e85a5a;
+}
+
+.diagram {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  margin: 1em;
+}
+
+.model {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 40%;
+  height: auto;
+  right: 0;
+  padding-right: 2em;
+  margin: auto;
+}
+
+#moodboard {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+top:0;
+bottom:0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.container {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 2em;
+  margin-right: auto;
+  margin-left: auto;
+  width: 95%;
+  border-top: 1px solid black;
+}
+
+/* Drop shadow */
+.z-depth-2 {
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.blur {
+  filter:blur(4px);
+  -o-filter:blur(4px);
+  -ms-filter:blur(4px);
+  -moz-filter:blur(4px);
+  -webkit-filter:blur(4px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+
