@@ -49,6 +49,10 @@ list.forEach((i) => {
   pageChanger(i);
 });
 
+dotMap.forEach((i) => {
+  pageChanger(i);
+});
+
 function pageChanger(i) {
   i.addEventListener("click", function () {
     let color = i.id;
@@ -87,10 +91,10 @@ $("#list-key").click(function () {
   $(blurLayer).blur("blur-out", 300);
 });
 
-// $(dotMap).click(function(){
-//   $(pageOverlay).fadeIn( 300,"linear");
-//   $(blurLayer).blur('blur-out', 300);
-// });
+$(dotMap).click(function(){
+  $(pageOverlay).fadeIn( 300,"linear");
+  $(blurLayer).blur('blur-out', 300);
+});
 
 $(pageOverlay).click(function () {
   $(pageOverlay).fadeOut(300);
