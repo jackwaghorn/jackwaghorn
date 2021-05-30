@@ -11,8 +11,8 @@ const datas = {
   green: "Check in area",
   teal: "Hub",
   yellow: "Pop ups",
-  orange: "Mezzanine lounge",
-  blue: "Service Area",
+  orange: "Service Area",
+  blue: "Mezzanine lounge",
   pink: "Fitting Rooms",
   grey: "layout plans",
 };
@@ -27,23 +27,23 @@ for (const [key, value] of Object.entries(datas)) {
 
 let list = document.querySelectorAll("li");
 
-// Dot finders
-list.forEach((el) => {
-  dotChanger(el);
-});
+// // Dot finders
+// list.forEach((el) => {
+//   dotChanger(el);
+// });
 
-// Select dot
-function dotChanger(el) {
-  el.addEventListener("mouseover", function () {
-    let color = el.id;
-    document.querySelector(
-      ".overlay"
-    ).innerHTML = `<div id="${color}" class="dot ${color} ${color}_position dot_resize"></img>`;
-  });
-  el.addEventListener("mouseout", function () {
-    document.querySelector(".overlay").innerHTML = dotMapContent;
-  });
-}
+// // Select dot
+// function dotChanger(el) {
+//   el.addEventListener("mouseover", function () {
+//     let color = el.id;
+//     document.querySelector(
+//       ".overlay"
+//     ).innerHTML = `<div id="${color}" class="dot ${color} ${color}_position dot_resize"></img>`;
+//   });
+//   el.addEventListener("mouseout", function () {
+//     document.querySelector(".overlay").innerHTML = dotMapContent;
+//   });
+// }
 
 list.forEach((i) => {
   pageChanger(i);
@@ -58,16 +58,27 @@ function pageChanger(i) {
     let color = i.id;
     if (color === "grey") {
       pageOverlay.innerHTML = `
-    
+      <div class="area">
+      <div class="instagram2" ><img src="/img/plan_instagram.png" alt="">
+      </div>
+      <div class="backbtn"><img src="img/not.png" alt="">Back to plan</div>
+      </div>
     <div class="wrap">
-        <div class="layoutplans"><img src="img/layout.png" alt=""></div>
+        <div class="layoutplans">
+          <div class="layout_ground"><img src="img/plan_ground.jpg" alt="">
+          </div>
+          <div class="layout_mezz"><img src="img/plan_mezz.jpg" alt="">
+          </div>
         </div>
+        
+    </div>
   
     `;
-    } else if (color === "green" || color === "yellow" || color === "blue") {
+    } else if (color === "teal" || color === "pink" ) {
       let title = i.textContent;
       pageOverlay.innerHTML = `
     <div class="area">
+    <div class="backbtn"><img src="img/not.png" alt="">Back to plan</div>
         <div class="instagram"><img src="img/${color}/${color}_instagram.png" alt=""></div>
         <div class="moodboard"><img src="img/${color}/${color}_moodboard.png" alt=""></div>
         <div class="wireframe"><img src="img/${color}/${color}_wireframe.png" alt=""></div>
@@ -77,6 +88,7 @@ function pageChanger(i) {
       let title = i.textContent;
       pageOverlay.innerHTML = `
     <div class="area">
+    <div class="backbtn"><img src="img/not.png" alt="">Back to plan</div>
         <div class="instagram2"><img src="img/${color}/${color}_instagram.png" alt=""></div>
         <div class="moodboard"><img src="img/${color}/${color}_moodboard.png" alt=""></div>
         <div class="wireframe"><img src="img/${color}/${color}_wireframe.png" alt=""></div>
@@ -91,9 +103,9 @@ $("#list-key").click(function () {
   $(blurLayer).blur("blur-out", 300);
 });
 
-$(dotMap).click(function(){
-  $(pageOverlay).fadeIn( 300,"linear");
-  $(blurLayer).blur('blur-out', 300);
+$(dotMap).click(function () {
+  $(pageOverlay).fadeIn(300, "linear");
+  $(blurLayer).blur("blur-out", 300);
 });
 
 $(pageOverlay).click(function () {
