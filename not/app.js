@@ -80,9 +80,9 @@ function pageChanger(i) {
     <div class="area">
     <div class="backbtn"><img data-src="img/not.png" class="lazyload" alt="">Back to concept model</div>
       </div>
-        <div class="instagram"><img data-src="img/${color}/${color}_instagram.png" class="lazyload" alt=""></div>
-        <div class="moodboard"><img data-src="img/${color}/${color}_moodboard.png" class="lazyload" alt=""></div>
-        <div class="wireframe"><img data-src="img/${color}/${color}_wireframe.png" class="lazyload" alt=""></div>
+        <div class="instagram"><img src="img/${color}/${color}_instagram-small.png" data-src="img/${color}/${color}_instagram.png" class="lazyload" alt=""></div>
+        <div class="moodboard"><img src="img/${color}/${color}_moodboard-small.png" data-src="img/${color}/${color}_moodboard.png" class="lazyload" alt=""></div>
+        <div class="wireframe"><img src="img/${color}/${color}_wireframe-small.jpg" data-src="img/${color}/${color}_wireframe.jpg" class="lazyload" alt=""></div>
     </div>
     `;
     } else {
@@ -91,9 +91,9 @@ function pageChanger(i) {
     <div class="area">
     <div class="backbtn"><img data-src="img/not.png" class="lazyload" alt="">Back to concept model</div>
       </div>
-        <div class="instagram2"><img data-src="img/${color}/${color}_instagram.png" class="lazyload" alt=""></div>
-        <div class="moodboard"><img data-src="img/${color}/${color}_moodboard.png" class="lazyload" alt=""></div>
-        <div class="wireframe"><img data-src="img/${color}/${color}_wireframe.png" class="lazyload" alt=""></div>
+        <div class="instagram2"><img src="img/${color}/${color}_instagram-small.png" data-src="img/${color}/${color}_instagram.png" class="lazyload" alt=""></div>
+        <div class="moodboard"><img src="img/${color}/${color}_moodboard-small.png" data-src="img/${color}/${color}_moodboard.png" class="lazyload" alt=""></div>
+        <div class="wireframe"><img src="img/${color}/${color}_wireframe-small.jpg" data-src="img/${color}/${color}_wireframe.jpg" class="lazyload" alt=""></div>
     </div>
     `;
     }
