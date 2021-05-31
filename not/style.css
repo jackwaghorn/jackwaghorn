@@ -418,6 +418,8 @@ footer {
 .layout_ground:hover {
   transform: scale(1.4);
   flex: 40%;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 2px 5px #222);
 }
 
 .layout_mezz {
@@ -431,5 +433,7 @@ footer {
 .layout_mezz:hover {
   transform: scale(1.4);
   flex: 40%;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 2px 5px #222);
 }
 
