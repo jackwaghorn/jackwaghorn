@@ -61,7 +61,7 @@ function pageChanger(i) {
       <div class="area">
       <div class="instagram2"><img src="img/plan_instagram.png" alt="">
       </div>
-      <div class="backbtn"><img src="img/not.png" alt="">Back to plan</div>
+      <div class="backbtn"><img src="img/not.png" alt="">Back to concept model</div>
       </div>
     <div class="wrap">
         <div class="layoutplans">
