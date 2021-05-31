@@ -59,7 +59,7 @@ function pageChanger(i) {
     if (color === "grey") {
       pageOverlay.innerHTML = `
       <div class="area">
-      <div class="instagram2" ><img src="/img/plan_instagram.png" alt="">
+      <div class="instagram2"><img src="img/plan_instagram.png" alt="">
       </div>
       <div class="backbtn"><img src="img/not.png" alt="">Back to plan</div>
       </div>
