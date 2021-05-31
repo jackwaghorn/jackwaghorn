@@ -78,7 +78,8 @@ function pageChanger(i) {
       let title = i.textContent;
       pageOverlay.innerHTML = `
     <div class="area">
-    <div class="backbtn"><img src="img/not.png" alt="">Back to plan</div>
+    <div class="backbtn"><img src="img/not.png" alt="">Back to concept model</div>
+      </div>
         <div class="instagram"><img src="img/${color}/${color}_instagram.png" alt=""></div>
         <div class="moodboard"><img src="img/${color}/${color}_moodboard.png" alt=""></div>
         <div class="wireframe"><img src="img/${color}/${color}_wireframe.png" alt=""></div>
@@ -88,7 +89,8 @@ function pageChanger(i) {
       let title = i.textContent;
       pageOverlay.innerHTML = `
     <div class="area">
-    <div class="backbtn"><img src="img/not.png" alt="">Back to plan</div>
+    <div class="backbtn"><img src="img/not.png" alt="">Back to concept model</div>
+      </div>
         <div class="instagram2"><img src="img/${color}/${color}_instagram.png" alt=""></div>
         <div class="moodboard"><img src="img/${color}/${color}_moodboard.png" alt=""></div>
         <div class="wireframe"><img src="img/${color}/${color}_wireframe.png" alt=""></div>
